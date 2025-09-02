@@ -3,17 +3,22 @@ project(OpenGLPlayground)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# GLFW
-include_directories(external/GLFW/include)
+# Create the executable target first
+add_executable(OpenGLPlayground src/main.cpp external/glad/src/glad.c)
 
-# GLAD
-include_directories(external/glad/include)
+# Now configure the target
+target_include_directories(OpenGLPlayground PRIVATE 
+    external/glad/include
+    external/KHR/include
+    external/GLFW/include
+)
 
-add_executable(OpenGLPlayground src/main.cpp)
+# Link libraries
+target_link_libraries(OpenGLPlayground 
+    ${CMAKE_CURRENT_SOURCE_DIR}/external/GLFW/lib-mingw-w64/libglfw3.a
+)
 
-target_link_libraries(OpenGLPlayground glfw glad)
-
-# Link OpenGL
+# Link OpenGL and other Windows libraries
 if (WIN32)
-    target_link_libraries(OpenGLPlayground opengl32)
+    target_link_libraries(OpenGLPlayground opengl32 gdi32 user32 kernel32)
 endif()
