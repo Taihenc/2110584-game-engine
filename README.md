@@ -1,4 +1,10 @@
-# OpenGL Playground
+# HW-2
+
+screenshot: ![image](/results/Screenshot%202025-09-30%20233151.png)
+
+video: ![video](/results/2025-09-30%2023-34-41.mp4) or [video](/results/2025-09-30%2023-34-41.mp4)
+
+<!-- # OpenGL Playground
 
 A minimal C++ OpenGL playground using GLFW and GLAD.
 
@@ -24,4 +30,4 @@ A minimal C++ OpenGL playground using GLFW and GLAD.
 ## Notes
 
 - The playground opens a window and clears the screen with a color.
-- Extend `src/main.cpp` for your OpenGL experiments.
+- Extend `src/main.cpp` for your OpenGL experiments. -->

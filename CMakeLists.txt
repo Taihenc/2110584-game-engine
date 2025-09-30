@@ -12,6 +12,7 @@ target_include_directories(OpenGLPlayground PRIVATE
     external/KHR/include
     external/GLFW/include
     external/glm/include
+    src
 )
 
 # Link libraries
