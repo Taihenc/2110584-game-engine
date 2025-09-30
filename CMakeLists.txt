@@ -7,10 +7,11 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(OpenGLPlayground src/main.cpp external/glad/src/glad.c)
 
 # Now configure the target
-target_include_directories(OpenGLPlayground PRIVATE 
+target_include_directories(OpenGLPlayground PRIVATE
     external/glad/include
     external/KHR/include
     external/GLFW/include
+    external/glm/include
 )
 
 # Link libraries
