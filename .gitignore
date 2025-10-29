@@ -1,9 +1,2 @@
-assets
 build
 external/glm
-src/thirdparty
-external
-*.zip
-*.glb
-*.obj
-*.gltf
