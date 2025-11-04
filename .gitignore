@@ -1,2 +1,4 @@
-build
-external/glm
+# ignores following folders
+bin/
+build/
+out/
